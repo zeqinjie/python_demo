@@ -19,6 +19,8 @@ def setFunc():
     # 补集 ^ : set1^set2，返回一个新的集合，包括集合 set1 和 set2 的非共同元素。
     set6 = set1 - set2
     print("差集 集合 set1 和 set2 的非共同元素:", set6)
+    for value in set6:
+        print("value 的值:", value)
 
 def main():
     setFunc()
