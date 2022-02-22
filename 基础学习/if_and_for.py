@@ -28,7 +28,7 @@ def dictFunc():
     for key in dict1.keys():
             print("key is:", key, "value is:", dict1[key])
     set1 = set(['Shell', 'Python', 'Ruby', 'Java'])
-    for value in set:
+    for value in set1:
         print("value 的值:", value)
  
 def rangeFunc():
@@ -50,7 +50,7 @@ def whileFunc():
 
     count = 1
     sum = 0
-    
+
     while (count <= 100):
         if ( count % 2 == 0):  # 双数时跳过输出
             count = count + 1
@@ -58,7 +58,7 @@ def whileFunc():
         sum = sum + count
         count = count + 1
     print(sum)
-    
+
     # 打印九九乘法表
     for i in range(1, 10):
             for j in range(1, i+1):
