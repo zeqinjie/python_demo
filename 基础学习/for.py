@@ -5,17 +5,18 @@ def forFunc():
     for i in range(1, 11):
         if i % 2 == 0:
             alist.append( i*i )
-    print("从1 到 10  所有偶数的平方", alist)
+    print("从1 到 10  所有偶数的平方：", alist)
     blist = [i*i for i in range(1, 11) if(i % 2) == 0]
-    print("从1 到 10  所有偶数的平方", alist)
+    print("blist 价于上面 alist：", blist)
 
+    # 数组 class_namse 转字典
     class_names = ['PHP', 'Swift', 'Java', 'Python', 'Objective-C']
-    z_num = {}
+    adict = {}
     for i in class_names:
-        z_num[i] = 0
-    print("转字典", z_num)
-    z_num = {i:0 for i in class_names}
-    print("转字典", z_num)
+        adict[i] = 0
+    print("生成字典：", adict)
+    bdict = {i: 0 for i in class_names}
+    print("bdict 等价于上面 adict：", bdict)
 
 def main():
     forFunc()
