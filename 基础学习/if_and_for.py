@@ -7,9 +7,9 @@ def conditionFunc():
     elif english > 80 and chinese > 80:
         print('良好')
     elif english < 60 or chinese < 60:
-        print ('有一门不及格')
+        print('有一门不及格')
     else:
-        print ('及格')
+        print('及格')
 
 def ifFunc():
     english = 89
@@ -18,9 +18,9 @@ def ifFunc():
         if chinese > 90:
             print('优秀')
         else:
-            print ('english 优秀，chinese 及格')
+            print('english 优秀，chinese 及格')
     else:
-        print ('及格')
+        print('及格')
 
 # 字典 & 集合遍历
 def dictFunc():
