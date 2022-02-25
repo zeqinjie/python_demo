@@ -10,3 +10,4 @@
 - [三）Python 基础知识：字典 & 集合](https://juejin.cn/post/7067179995231158286)
 - [四）Python 基础知识：条件 & 循环](https://juejin.cn/post/7067556746520166408)
 - [五）Python 基础知识：函数 & 推导式](https://juejin.cn/post/7067922816196149285)
+- [六）Python 基础知识：迭代器 & 生成器](https://juejin.cn/post/7068296413787979784)
