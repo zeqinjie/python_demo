@@ -37,7 +37,7 @@ def null():
 # 类型转换
 # 类型判断: type(var)
 # 类型转换： int()、float()、str()、bool()
-def baseVaule():
+def base_vaule():
     num = 2
     moneyString = "100"
     money = int(moneyString)

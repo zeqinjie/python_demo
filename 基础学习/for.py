@@ -1,5 +1,5 @@
 # 推导式
-def forFunc():
+def for_func():
     # 从1 到 10  所有偶数的平方
     alist = []
     for i in range(1, 11):
@@ -19,7 +19,7 @@ def forFunc():
     print("bdict 等价于上面 adict：", bdict)
 
 def main():
-    forFunc()
+    for_func()
 
 if __name__ == '__main__':
     main()

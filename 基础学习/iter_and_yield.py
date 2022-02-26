@@ -4,7 +4,7 @@
 import sys
 
 # for 循环输出每个值
-def forFunc():
+def for_func():
     class_names = ['PHP', 'Swift', 'Java', 'Python', 'Objective-C']
     for name in class_names:
 	    print("class name:", name)
@@ -12,7 +12,7 @@ def forFunc():
         print(char, end=' ')
 
 # 迭代器
-def iterFunc():
+def iter_func():
     class_names1 = ['PHP', 'Swift', 'Java']
     iter1 = iter(class_names1)
     print(next(iter1))
@@ -36,7 +36,7 @@ def iterFunc():
             sys.exit()
 
 # 生成器
-def yieldFunc():
+def yield_func():
     print("------实现支持步长值为浮点的 range：------")
     for value in frange(10, 20, 0.5):
         print(value, end=',')
@@ -85,9 +85,9 @@ def fibonacci(n):
         counter += 1
 
 def main():
-    # forFunc()
-    # iterFunc()
-    yieldFunc()
+    # for_func()
+    # iter_func()
+    yield_func()
 
 
 if __name__ == '__main__':

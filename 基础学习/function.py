@@ -27,7 +27,7 @@ def getValues(num1, num2):
 
 
 # 不定长函数
-def printInfo(arg1, *vartuple):
+def print_info(arg1, *vartuple):
     print("zeqin 输出: ", arg1)
     for var in vartuple:
         print(",", var)
@@ -50,11 +50,11 @@ def change(list):
     print("change 里 list 的值", list)
 
 # lambda 匿名函数
-def lambdaFunc():
+def lambda_func():
     sum = lambda num1, num2: num1 + num2;
     print(sum(1, 2))
 
-def testFunc():
+def test_func():
     a = 100
     b = 20
     print("a+b = ", add(a, b))
@@ -73,7 +73,7 @@ def testFunc():
     print("求商与余数的元组", tuple1)
 
     # 不定长参数
-    printInfo("我叫", "zhenzeqin", "age = 20", "height = 100kg")
+    print_info("我叫", "zhenzeqin", "age = 20", "height = 100kg")
 
     # print_user_info("zhengzeqin", 20, 100) # 报错 参数是 * 号后的不能省略参数名
     print_user_info("zhengzeqin", age= 20, height = 100)
@@ -89,10 +89,10 @@ def testFunc():
     print("change 外 list 的值", list11)
 
     # lambda 匿名函数
-    lambdaFunc()
+    lambda_func()
 
 def main():
-    testFunc()
+    test_func()
 
 
 if __name__ == '__main__':

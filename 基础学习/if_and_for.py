@@ -1,5 +1,5 @@
 # 条件
-def conditionFunc():
+def condition_func():
     english = 89
     chinese = 90
     if english > 90 and chinese > 90:
@@ -11,7 +11,7 @@ def conditionFunc():
     else:
         print('及格')
 
-def ifFunc():
+def if_func():
     english = 89
     chinese = 90
     if english > 90 :
@@ -23,7 +23,7 @@ def ifFunc():
         print('及格')
 
 # 字典 & 集合遍历
-def dictFunc():
+def dict_func():
     dict1 = {'1': 'Java', '2': 'PHP', '3': 'Swift'}
     for key in dict1.keys():
             print("key is:", key, "value is:", dict1[key])
@@ -31,7 +31,7 @@ def dictFunc():
     for value in set1:
         print("value 的值:", value)
  
-def rangeFunc():
+def range_func():
     # 取从 0 到 3 之间  结果： 0,1,2
     for i in range(3):
         print(i)
@@ -42,7 +42,7 @@ def rangeFunc():
     for i in range(0, 10, 2):
         print(i)
     
-def whileFunc():
+def while_func():
     i = 0
     while i < 10:
         print(i)
@@ -67,11 +67,11 @@ def whileFunc():
             print()
 
 def main():
-    conditionFunc()
-    ifFunc()
-    dictFunc()
-    rangeFunc()
-    whileFunc()
+    condition_func()
+    if_func()
+    dict_func()
+    range_func()
+    while_func()
 
 if __name__ == '__main__':
     main()

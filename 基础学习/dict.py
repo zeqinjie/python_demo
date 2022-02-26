@@ -1,5 +1,5 @@
 # 字典
-def dictFunc():
+def dict_func():
     dict1 = {'1': 'Java', '2': 'PHP', '3': 'Swift'}
     print(dict1)
     # 新增一个键值对

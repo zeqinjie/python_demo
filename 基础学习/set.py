@@ -1,5 +1,5 @@
 # set
-def setFunc():
+def set_func():
     set1 = set(['Java', 'OC', 'Swift', 'Swift'])
     print(set1)
     set1.add('Dart')
@@ -23,7 +23,7 @@ def setFunc():
         print("value 的值:", value)
 
 def main():
-    setFunc()
+    set_func()
 
 if __name__ == '__main__':
     main()

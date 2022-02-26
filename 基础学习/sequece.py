@@ -48,7 +48,7 @@ def string():
     print(R'\n')
 
 # 字符串格式化
-def stringFormat():
+def string_format():
     chinese_zodiac = "鼠牛虎兔龙蛇马羊猴鸡狗猪"
     # Python 字符串格式化:
     chinese_zodiac_str = chinese_zodiac[2:5]
@@ -56,7 +56,7 @@ def stringFormat():
     print("chinese_zodiac 输出结果：", chinese_zodiac)
 
 # 字符串函数
-def stringFunc():
+def string_func():
     name = "zhengzeqin"
     print("首字母大写:", name.capitalize())
     # 长度
@@ -78,7 +78,7 @@ def list():
     print("从下标 1 开始读取: ", class_names[1:])
 
 # 列表的函数
-def listFun():
+def list_fun():
     class_names = ['PHP', 'Swift', 'Java', 'Python', 'Objective-C']
     class_names.append("Dart")
     print(class_names)
@@ -104,8 +104,8 @@ def tuple():
 
 def main():
     # string()
-    # stringFormat()
-    # stringFunc()
+    # string_format()
+    # string_func()
     # list()
     # listFun()
     # tuple()
