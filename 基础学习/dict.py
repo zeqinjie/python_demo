@@ -18,7 +18,7 @@ def dict_func():
     print("删除字典中的所有元素:", dict1)
 
 def main():
-    dictFunc()
+    dict_func()
 
 if __name__ == '__main__':
     main()
