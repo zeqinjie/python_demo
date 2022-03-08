@@ -16,9 +16,9 @@ import sys
 import getopt
 
 # 定义 flutter 目标 android project build_gradle 配置的路径
-_project_build_gradle_set_file = "/Users/addcn/flutter/packages/flutter_tools/templates/module/android/gradle/build.gradle.tmpl"
+_project_build_gradle_set_file = "/Users/zhengzeqin/flutter/packages/flutter_tools/templates/module/android/gradle/build.gradle.tmpl"
 # 定义 flutter 目标 android app build_gradle 配置的路径
-_app_build_gradle_set_file = "/Users/addcn/flutter/packages/flutter_tools/templates/module/android/host_app_common/app.tmpl/build.gradle.tmpl"
+_app_build_gradle_set_file = "/Users/zhengzeqin/flutter/packages/flutter_tools/templates/module/android/host_app_common/app.tmpl/build.gradle.tmpl"
 
 # 定义需要写入的 android project 根目录的 build_gradle 配置
 _build_gradle_tmpl_for_project = "/build_gradle_tmpl_for_project.txt"
