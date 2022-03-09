@@ -18,7 +18,8 @@
 
 ### 实战篇
 - [一）Python 实战：解决 Flutter 项目 bitcode = true 编译失败问题](https://zhengzeqin.netlify.app/2022/03/02/%E4%B8%80%EF%BC%89python-%E5%AE%9E%E6%88%98%EF%BC%9A%E8%A7%A3%E5%86%B3-flutter-%E9%A1%B9%E7%9B%AE-bitcode-true-%E7%BC%96%E8%AF%91%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/)
+- [二）Python 实战：解决 Flutter 项目 Android minSdkVersion 及 kotlin 版本低的问题](https://zhengzeqin.netlify.app/2022/03/08/%E4%BA%8C%EF%BC%89python-%E5%AE%9E%E6%88%98%EF%BC%9A%E8%A7%A3%E5%86%B3-flutter-%E9%A1%B9%E7%9B%AE-android-minsdkversion-%E5%8F%8A-kotlin-%E7%89%88%E6%9C%AC%E4%BD%8E%E7%9A%84%E9%97%AE%E9%A2%98/)
 
 ### 推荐篇
 - [Python 系列教程（入门系列已写完）](https://juejin.cn/post/6844903567715729415)
--  [Mac上pyenv的安装与使用](https://juejin.cn/post/7056800493753860103)
+- [Mac上pyenv的安装与使用](https://juejin.cn/post/7056800493753860103)

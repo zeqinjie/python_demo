@@ -64,18 +64,19 @@ def get_current_path():
 
 # 设置 app 的 file
 def set_app_build_gradle_file():
-    concurrent = os.path.abspath(os.path.dirname(__file__))
-    read_file_path = concurrent + _build_gradle_tmpl_for_app
-    # check_path = concurrent + "/app"
-    # write_file_path = concurrent + "/build.gradle.tmpl"
-    # mkdir(check_path)
+    read_file_path = get_build_gradle_file(_build_gradle_tmpl_for_app)
     set_build_gradle_file(read_file_path, _app_build_gradle_set_file)
 
 # 设置 project 根目录的 file
 def set_pro_build_gradle_file():
-    concurrent = os.path.abspath(os.path.dirname(__file__))
-    read_file_path = concurrent + _build_gradle_tmpl_for_project
+    read_file_path = get_build_gradle_file(_build_gradle_tmpl_for_project)
     set_build_gradle_file(read_file_path, _project_build_gradle_set_file)
+
+# 读取本地配置文件
+def get_build_gradle_file(build_gradle_tmpl):
+    concurrent = os.path.abspath(os.path.dirname(__file__))
+    read_file_path = concurrent + build_gradle_tmpl
+    return  read_file_path
 
 # 通过本地文件配置路径修改 Android 项目的 build_gradle 配置
 def set_android_build_gradle_params_files():
@@ -105,9 +106,11 @@ def set_android_build_gradle_argv_files():
         if opt in ["-a", "--app"]:
             app_path = arg
     # 设置 project build gradle
-    set_build_gradle_file(project_path, _project_build_gradle_set_file)
+    read_pro_file_path = get_build_gradle_file(_build_gradle_tmpl_for_project)
+    set_build_gradle_file(read_pro_file_path, project_path)
     # 设置 app build gradle
-    set_build_gradle_file(app_path, _project_build_gradle_set_file)
+    read_app_file_path = get_build_gradle_file(_build_gradle_tmpl_for_app)
+    set_build_gradle_file(read_app_file_path, app_path)
 
 if __name__ == "__main__":
     set_android_build_gradle_params_files()
