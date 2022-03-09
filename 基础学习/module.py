@@ -19,4 +19,4 @@ if __name__ == "__main__":
     map_func()
 
     # 导入模块的所有内容
-
+    dict_func()
