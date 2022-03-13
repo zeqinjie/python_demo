@@ -9,7 +9,7 @@ def reduce(num1, num2):
 
 
 def multiply(num1, num2):
-    "求两数相乘值"
+    """求两数相乘值"""
     return num1 * num2
 
 
@@ -33,26 +33,31 @@ def print_info(arg1, *vartuple):
         print(",", var)
     return None
 
+
 # 打印用户信息
-def print_user_info(name, *, age, height= 200):
+def print_user_info(name, *, age, height=200):
     print('昵称：{}'.format(name), end=' ')
     print('年龄：{}'.format(age), end=' ')
     print('体重：{}'.format(height))
+
 
 # 不可以变
 def unchange(num):
     num = num + 1
     print("unchange 里 num 的值", num)
 
+
 # 可以变
 def change(list):
     list.append(123)
     print("change 里 list 的值", list)
 
+
 # lambda 匿名函数
 def lambda_func():
     sum = lambda num1, num2: num1 + num2;
     print(sum(1, 2))
+
 
 def test_func():
     a = 100
@@ -76,7 +81,7 @@ def test_func():
     print_info("我叫", "zhenzeqin", "age = 20", "height = 100kg")
 
     # print_user_info("zhengzeqin", 20, 100) # 报错 参数是 * 号后的不能省略参数名
-    print_user_info("zhengzeqin", age= 20, height = 100)
+    print_user_info("zhengzeqin", age=20, height=100)
 
     # 不可变
     num11 = 100
@@ -90,6 +95,7 @@ def test_func():
 
     # lambda 匿名函数
     lambda_func()
+
 
 def main():
     test_func()
