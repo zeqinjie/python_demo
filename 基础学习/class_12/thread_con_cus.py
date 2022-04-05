@@ -1,3 +1,5 @@
+# 第 12 章: 多线程编程 - 经典的生产者和消费者问题
+
 from threading import Thread, current_thread
 import time
 import random

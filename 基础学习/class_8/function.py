@@ -1,3 +1,5 @@
+# 第 8 章：函数
+
 def add(num1, num2):
     "求两数相加值"
     return num1 + num2

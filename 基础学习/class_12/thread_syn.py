@@ -1,3 +1,5 @@
+# 第 12 章: 多线程编程 - 队列
+
 from queue import Queue
 import threading
 import time
@@ -5,7 +7,7 @@ import time
 exitFlag = 0
 
 
-class myThread(threading.Thread):
+class MyThread(threading.Thread):
     def __init__(self, threadID, name, q):
         threading.Thread.__init__(self)
         self.threadID = threadID
@@ -40,7 +42,7 @@ threadID = 1
 
 # 创建新线程
 for tName in threadList:
-    thread = myThread(threadID, tName, workQueue)
+    thread = MyThread(threadID, tName, workQueue)
     thread.start()
     threads.append(thread)
     threadID += 1

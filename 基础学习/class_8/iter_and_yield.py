@@ -1,15 +1,17 @@
+# 第 8 章： 函数 - 迭代器与生成器
 
-# 迭代器
 # 迭代器有两个基本的方法：iter() 和 next()
 import sys
+
 
 # for 循环输出每个值
 def for_func():
     class_names = ['PHP', 'Swift', 'Java', 'Python', 'Objective-C']
     for name in class_names:
-	    print("class name:", name)
+        print("class name:", name)
     for char in 'zhengzeqin':
         print(char, end=' ')
+
 
 # 迭代器
 def iter_func():
@@ -34,6 +36,7 @@ def iter_func():
         except StopIteration:
             print("异常抛出：exit")
             sys.exit()
+
 
 # 生成器
 def yield_func():
@@ -60,11 +63,12 @@ def yield_func():
 
 
 # 实现支持步长值为浮点的 range
-def frange(start,stop,step):
+def frange(start, stop, step):
     x = start
     while x < stop:
         yield x
-        x +=step
+        x += step
+
 
 # 杨辉三角形
 def triangles(n):
@@ -72,9 +76,10 @@ def triangles(n):
     while True:
         yield L
         L.append(0)
-        L = [L[i - 1] + L[i] for i in range (len(L))]
+        L = [L[i - 1] + L[i] for i in range(len(L))]
 
- # 生成器函数 - 斐波那契
+
+# 生成器函数 - 斐波那契
 def fibonacci(n):
     a, b, counter = 0, 1, 0
     while True:
@@ -83,6 +88,7 @@ def fibonacci(n):
         yield a
         a, b = b, a + b
         counter += 1
+
 
 def main():
     # for_func()

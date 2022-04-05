@@ -1,3 +1,5 @@
+# 第 7 章： 错误与异常
+
 i = j
 
 print())
@@ -35,7 +37,7 @@ except NameError:
 
 
 try:
-    a = open('name.txt')
+    a = open('../class_6/name.txt')
 except Exception as e:
     print(e)
 

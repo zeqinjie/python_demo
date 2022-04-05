@@ -1,9 +1,11 @@
-
+# 第 2 章： 基础语法 - 基本数据
 
 """ 三）基本数据
 整数、浮点数、字符串、布尔值
 打印类型：type()
 """
+
+
 def zodiac():
     zodiac_name = (u'摩羯座', u'水瓶座', u'双鱼座', u'白羊座', u'金牛座', u'双子座',
                    u'巨蟹座', u'狮子座', u'处女座', u'天秤座', u'天蝎座', u'射手座')
@@ -33,8 +35,10 @@ def zodiac():
             print(zodiac_name[0])
             break
 
+
 def main():
     zodiac()
+
 
 if __name__ == '__main__':
     main()

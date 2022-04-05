@@ -22,8 +22,10 @@ def set_func():
     for value in set6:
         print("value 的值:", value)
 
+
 def main():
     set_func()
+
 
 if __name__ == '__main__':
     main()
