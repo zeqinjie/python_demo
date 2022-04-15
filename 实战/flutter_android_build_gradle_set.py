@@ -26,6 +26,7 @@ _build_gradle_tmpl_for_project = "/build_gradle_tmpl_for_project.txt"
 # 定义需要写入的 android app 目录的 build_gradle 配置
 _build_gradle_tmpl_for_app = "/build_gradle_tmpl_for_app.txt"
 
+
 # 读取文件内容
 def readfile(file_name):
     file2 = open(file_name)
@@ -49,6 +50,7 @@ def android_gradle_set():
     read_file.close()
     write_file.close()
 
+
 # 从文件路径中写入到目标文件
 def set_build_gradle_file(read_file_path, write_file):
     read_file = open(read_file_path, 'r')
@@ -58,30 +60,36 @@ def set_build_gradle_file(read_file_path, write_file):
     read_file.close()
     write_file.close()
 
+
 # 获取当前文件夹的路径
 def get_current_path():
     return os.path.abspath(os.path.dirname(__file__))
+
 
 # 设置 app 的 file
 def set_app_build_gradle_file():
     read_file_path = get_build_gradle_file(_build_gradle_tmpl_for_app)
     set_build_gradle_file(read_file_path, _app_build_gradle_set_file)
 
+
 # 设置 project 根目录的 file
 def set_pro_build_gradle_file():
     read_file_path = get_build_gradle_file(_build_gradle_tmpl_for_project)
     set_build_gradle_file(read_file_path, _project_build_gradle_set_file)
 
+
 # 读取本地配置文件
 def get_build_gradle_file(build_gradle_tmpl):
     concurrent = os.path.abspath(os.path.dirname(__file__))
     read_file_path = concurrent + build_gradle_tmpl
-    return  read_file_path
+    return read_file_path
+
 
 # 通过本地文件配置路径修改 Android 项目的 build_gradle 配置
 def set_android_build_gradle_params_files():
     set_pro_build_gradle_file()
     set_app_build_gradle_file()
+
 
 # 通过参数配置路径修改 Android 项目的 build_gradle 配置
 def set_android_build_gradle_argv_files():
@@ -111,6 +119,7 @@ def set_android_build_gradle_argv_files():
     # 设置 app build gradle
     read_app_file_path = get_build_gradle_file(_build_gradle_tmpl_for_app)
     set_build_gradle_file(read_app_file_path, app_path)
+
 
 if __name__ == "__main__":
     set_android_build_gradle_params_files()

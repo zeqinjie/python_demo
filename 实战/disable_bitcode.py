@@ -49,6 +49,7 @@ def set_bit_code_path(path, is_close_bitcode=True):
 def set_bit_code_flag(project, bitcode_str, target_name="Runner", configuration_name='Debug'):
     project.set_flags('ENABLE_BITCODE', bitcode_str, target_name=target_name, configuration_name=configuration_name)
 
+
 # cd /Users/zhengzeqin/Desktop/GitLab/TWHouseScript; python disable_bitcode.py -p '/Users/zhengzeqin/Desktop/GitLab/tw591_salehouse' -s close
 if __name__ == "__main__":
     # 本地文件配置路径处理 bitcode
