@@ -20,7 +20,7 @@ tqdm==4.47.0
 urllib3==1.25.9
 ds_opencc==1.1.11
 PyYAML==6.0.1
-
+# OpenCC=1.1.7
 
 
 
